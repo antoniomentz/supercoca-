@@ -6,19 +6,66 @@
   <title>Potes da SuperCoca 2026</title>
   <style>
     body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#222;}
+
+    /* ===== MENU ===== */
+    nav {
+      background:#0EA5E9;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      gap:20px;
+      justify-content:center;
+    }
+    nav ul li a {
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+    nav ul li a:hover {
+      color:#FFD700;
+    }
+
+    /* ===== ESTILO DA PÁGINA ===== */
     header {background:#0EA5E9; color:#fff; padding:30px; text-align:center;}
     section {padding:40px 20px; max-width:1000px; margin:auto;}
     h2 {color:#0EA5E9; margin-bottom:20px; text-align:center;}
     .potes {display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px;}
-    .card {background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:20px;}
+
+    /* ===== CARD IGUAL AO INDEX ===== */
+    .card {
+      background:#fff;
+      padding:20px;
+      border-radius:12px;
+      border:2px solid #0EA5E9;
+      text-align:center;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    }
     .card h3 {margin-top:0; color:#22C55E;}
+
     table {width:100%; border-collapse:collapse; margin-top:10px;}
-    th, td {border:1px solid #ccc; padding:8px; text-align:left;}
+    th, td {border:1px solid #ccc; padding:8px; text-align:center;}
     th {background:#0EA5E9; color:#fff;}
+
     footer {background:#0EA5E9; color:#fff; text-align:center; padding:15px; margin-top:40px;}
   </style>
 </head>
 <body>
+  <!-- MENU -->
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Início</a></li>
+      <li><a href="potes.html">🎲 Potes</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Potes da SuperCoca 2026</h1>
     <p>Distribuição de jogadores em potes (será atualizada após o sorteio)</p>
@@ -141,3 +188,4 @@
   </footer>
 </body>
 </html>
+
