@@ -22,11 +22,35 @@
     }
     nav a:hover { color:#FFD700; }
 
-    /* ===== ESTILOS GERAIS ===== */
-    header {background:#0EA5E9; color:#fff; padding:30px; text-align:center;}
+      /* ===== CABEÇALHO COM IMAGEM ===== */
+    header {
+      position: relative;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('fotoprincipal.jpg') center/cover no-repeat; /* <-- coloque aqui o nome do arquivo da imagem */
+      filter: brightness(0.45); /* escurece a imagem para o texto ficar visível */
+      z-index: 0;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      padding: 0 20px;
+    }
+
     section {padding:40px 20px; max-width:1000px; margin:auto;}
     h2 {color:#0EA5E9; margin-bottom:20px; text-align:center;}
-
     /* ===== CARD ===== */
     .card {
       background:#fff;
@@ -169,4 +193,5 @@
     <p>📅 SuperCoca 2026 | Lista de Times</p>
   </footer>
 </body>
+
 </html>
