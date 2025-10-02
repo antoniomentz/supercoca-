@@ -91,6 +91,19 @@
       }
     }
   </style>
+  .classificacao {
+  background: url('classificacao.jpg') center/cover no-repeat;
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+.classificacao h2 {
+  color: #FFD700; /* deixa os títulos com destaque */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* sombra pra não sumir no fundo */
+}
+.classificacao .card {
+  background: rgba(255, 255, 255, 0.9); /* deixa os cards legíveis */
+}
+
 </head>
 <body>
 
@@ -105,9 +118,10 @@
   </nav>
 
   <!-- CLASSIFICAÇÃO & ARTILHARIA -->
-  <section>
-    <h2>📊 Classificação do Campeonato</h2>
-    <div class="card">
+ <section class="classificacao">
+  <h2>📊 Classificação do Campeonato</h2>
+  ...
+</section>
       <table>
         <tr><th>Time</th><th>Pontos</th><th>Vitórias</th><th>Derrotas</th><th>Saldo de Gols</th></tr>
         <tr><td>Time 1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
@@ -137,4 +151,5 @@
 
 </body>
 </html>
+
 
