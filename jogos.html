@@ -59,20 +59,23 @@ h3.day {
   box-shadow: 0 4px 10px rgba(0,0,0,.08);
   margin-bottom: 25px;
 }
-.card h4 {
-  margin-bottom: 12px;
-  color: #0EA5E9;
+
+/* TABELA RESPONSIVA */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* TABELA */
 table {
   width: 100%;
+  min-width: 520px;
   border-collapse: collapse;
 }
 th, td {
   padding: 10px;
   border: 1px solid #ddd;
   text-align: center;
+  white-space: nowrap;
 }
 th {
   background: #0EA5E9;
@@ -94,8 +97,10 @@ th {
   font-size: 1.2rem;
 }
 
+/* MOBILE */
 @media (max-width: 700px) {
-  .match { font-size: 0.9rem; }
+  .match { font-size: 0.85rem; }
+  th, td { font-size: 0.85rem; padding: 8px; }
 }
 </style>
 </head>
@@ -118,122 +123,274 @@ th {
 
 <h3 class="day">📆 Dia 1 — Rodadas 1 a 5</h3>
 
-<!-- RODADA 1 -->
-<div class="card">
-<h4>Rodada 1</h4>
-<table>
+<!-- RODADAS 1 A 5 -->
+<!-- TODAS COM TABLE-WRAP -->
+
+<!-- Rodada 1 -->
+<div class="card"><h4>Rodada 1</h4><div class="table-wrap"><table>
 <tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
 <tr><td>18:00</td><td><div class="match"><span class="team left">REGGEA FC</span><span class="vs">×</span><span class="team right">Casa das Primas FC</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>18:40</td><td><div class="match"><span class="team left">CLIENTES GRUTA AZUL</span><span class="vs">×</span><span class="team right">Indepiendente DEL VERDE</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>19:20</td><td><div class="match"><span class="team left">Estudiantes DEL LAURA DREHER</span><span class="vs">×</span><span class="team right">Time Sem Camisa</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>Folga</td><td colspan="3">Branja FC</td></tr>
-</table>
-</div>
+</table></div></div>
 
-<!-- RODADA 2 -->
-<div class="card">
-<h4>Rodada 2</h4>
-<table>
+<!-- Rodada 2 -->
+<div class="card"><h4>Rodada 2</h4><div class="table-wrap"><table>
 <tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
 <tr><td>18:00</td><td><div class="match"><span class="team left">Branja FC</span><span class="vs">×</span><span class="team right">Casa das Primas FC</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>18:40</td><td><div class="match"><span class="team left">REGGEA FC</span><span class="vs">×</span><span class="team right">Time Sem Camisa</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>19:20</td><td><div class="match"><span class="team left">CLIENTES GRUTA AZUL</span><span class="vs">×</span><span class="team right">ESTUDIANTES DEL LAURA DREHER</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>Folga</td><td colspan="3">INDEPIENDENTE DEL VERDE</td></tr>
-</table>
-</div>
+</table></div></div>
 
-<!-- RODADA 3 -->
-<div class="card">
-<h4>Rodada 3</h4>
-<table>
+<!-- Rodada 3 -->
+<div class="card"><h4>Rodada 3</h4><div class="table-wrap"><table>
 <tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
 <tr><td>18:00</td><td><div class="match"><span class="team left">Branja FC</span><span class="vs">×</span><span class="team right">Indepiendente DEL VERDE</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>18:40</td><td><div class="match"><span class="team left">Casa das Primas FC</span><span class="vs">×</span><span class="team right">Time Sem Camisa</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>19:20</td><td><div class="match"><span class="team left">REGGEA FC</span><span class="vs">×</span><span class="team right">CLIENTES GRUTA AZUL</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>Folga</td><td colspan="3">ESTUDIANTES DEL LAURA DREHER</td></tr>
-</table>
-</div>
+</table></div></div>
 
-<!-- RODADA 4 -->
-<div class="card">
-<h4>Rodada 4</h4>
-<table>
+<!-- Rodada 4 -->
+<div class="card"><h4>Rodada 4</h4><div class="table-wrap"><table>
 <tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
 <tr><td>18:00</td><td><div class="match"><span class="team left">Branja FC</span><span class="vs">×</span><span class="team right">Time Sem Camisa</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>18:40</td><td><div class="match"><span class="team left">Indepiendente DEL VERDE</span><span class="vs">×</span><span class="team right">ESTUDIANTES DEL LAURA DREHER</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>19:20</td><td><div class="match"><span class="team left">Casa das Primas FC</span><span class="vs">×</span><span class="team right">CLIENTES GRUTA AZUL</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>Folga</td><td colspan="3">REGGEA FC</td></tr>
-</table>
-</div>
+</table></div></div>
 
-<!-- RODADA 5 -->
-<div class="card">
-<h4>Rodada 5</h4>
-<table>
+<!-- Rodada 5 -->
+<div class="card"><h4>Rodada 5</h4><div class="table-wrap"><table>
 <tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
 <tr><td>15:00</td><td><div class="match"><span class="team left">Branja FC</span><span class="vs">×</span><span class="team right">ESTUDIANTES DEL LAURA DREHER</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>15:40</td><td><div class="match"><span class="team left">Time Sem Camisa</span><span class="vs">×</span><span class="team right">CLIENTES GRUTA AZUL</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>16:20</td><td><div class="match"><span class="team left">Indepiendente DEL VERDE</span><span class="vs">×</span><span class="team right">REGGEA FC</span></div></td><td>-</td><td>-</td></tr>
 <tr><td>Folga</td><td colspan="3">Casa das Primas FC</td></tr>
-</table>
-</div>
+</table></div></div>
 
 <h3 class="day">📆 Dia 2 — Rodadas 6 e 7 + Eliminatórias</h3>
 
 <!-- RODADA 6 -->
 <div class="card">
-<h4>Rodada 6</h4>
-<table>
-<tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
-<tr><td>16:40</td><td><div class="match"><span class="team left">Branja FC</span><span class="vs">×</span><span class="team right">CLIENTES GRUTA AZUL</span></div></td><td>-</td><td>-</td></tr>
-<tr><td>17:20</td><td><div class="match"><span class="team left">ESTUDIANTES DEL LAURA DREHER</span><span class="vs">×</span><span class="team right">REGGEA FC</span></div></td><td>-</td><td>-</td></tr>
-<tr><td>18:00</td><td><div class="match"><span class="team left">Indepiendente DEL VERDE</span><span class="vs">×</span><span class="team right">Casa das Primas FC</span></div></td><td>-</td><td>-</td></tr>
-<tr><td>Folga</td><td colspan="3">Time Sem Camisa</td></tr>
-</table>
+  <h4>Rodada 6</h4>
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>Horário</th>
+        <th>Confronto</th>
+        <th>Placar</th>
+        <th>Gols</th>
+      </tr>
+      <tr>
+        <td>16:40</td>
+        <td>
+          <div class="match">
+            <span class="team left">Branja FC</span>
+            <span class="vs">×</span>
+            <span class="team right">CLIENTES GRUTA AZUL</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>17:20</td>
+        <td>
+          <div class="match">
+            <span class="team left">ESTUDIANTES DEL LAURA DREHER</span>
+            <span class="vs">×</span>
+            <span class="team right">REGGEA FC</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>18:00</td>
+        <td>
+          <div class="match">
+            <span class="team left">Indepiendente DEL VERDE</span>
+            <span class="vs">×</span>
+            <span class="team right">Casa das Primas FC</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Folga</td>
+        <td colspan="3">Time Sem Camisa</td>
+      </tr>
+    </table>
+  </div>
 </div>
 
 <!-- RODADA 7 -->
 <div class="card">
-<h4>Rodada 7 — Última</h4>
-<table>
-<tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
-<tr><td>18:40</td><td><div class="match"><span class="team left">Branja FC</span><span class="vs">×</span><span class="team right">REGGEA FC</span></div></td><td>-</td><td>-</td></tr>
-<tr><td>19:20</td><td><div class="match"><span class="team left">ESTUDIANTES DEL LAURA DREHER </span><span class="vs">×</span><span class="team right">Casa das Primas FC</span></div></td><td>-</td><td>-</td></tr>
-<tr><td>20:00</td><td><div class="match"><span class="team left">Time Sem Camisa</span><span class="vs">×</span><span class="team right">Indepiendente DEL VERDE </span></div></td><td>-</td><td>-</td></tr>
-<tr><td>Folga</td><td colspan="3">CLIENTES GRUTA AZUL</td></tr>
-</table>
+  <h4>Rodada 7 — Última</h4>
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>Horário</th>
+        <th>Confronto</th>
+        <th>Placar</th>
+        <th>Gols</th>
+      </tr>
+      <tr>
+        <td>18:40</td>
+        <td>
+          <div class="match">
+            <span class="team left">Branja FC</span>
+            <span class="vs">×</span>
+            <span class="team right">REGGEA FC</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>19:20</td>
+        <td>
+          <div class="match">
+            <span class="team left">ESTUDIANTES DEL LAURA DREHER</span>
+            <span class="vs">×</span>
+            <span class="team right">Casa das Primas FC</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>20:00</td>
+        <td>
+          <div class="match">
+            <span class="team left">Time Sem Camisa</span>
+            <span class="vs">×</span>
+            <span class="team right">Indepiendente DEL VERDE</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Folga</td>
+        <td colspan="3">CLIENTES GRUTA AZUL</td>
+      </tr>
+    </table>
+  </div>
 </div>
 
 <!-- ELIMINATÓRIAS -->
 <div class="card">
-<h4>Quartas de Final</h4>
-<table>
-<tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
-<tr><td>20:40</td><td>3º × 6º</td><td>-</td><td>-</td></tr>
-<tr><td>21:20</td><td>4º × 5º</td><td>-</td><td>-</td></tr>
-</table>
-</div>
+  <h3>🏆 Eliminatórias</h3>
 
-<div class="card">
-<h4>Semifinais</h4>
-<table>
-<tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
-<tr><td>22:00</td><td>1º × Vencedor QF1</td><td>-</td><td>-</td></tr>
-<tr><td>22:40</td><td>2º × Vencedor QF2</td><td>-</td><td>-</td></tr>
-</table>
-</div>
+  <!-- QUARTAS -->
+  <h4>Quartas de Final</h4>
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>Horário</th>
+        <th>Confronto</th>
+        <th>Placar</th>
+        <th>Gols</th>
+      </tr>
+      <tr>
+        <td>20:40</td>
+        <td>
+          <div class="match">
+            <span class="team left">3º Colocado</span>
+            <span class="vs">×</span>
+            <span class="team right">6º Colocado</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>21:10</td>
+        <td>
+          <div class="match">
+            <span class="team left">4º Colocado</span>
+            <span class="vs">×</span>
+            <span class="team right">5º Colocado</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
 
-<div class="card" style="border:2px solid gold;">
-<h4 style="text-align:center;color:gold;">🏆 Final</h4>
-<table>
-<tr><th>Horário</th><th>Confronto</th><th>Placar</th><th>Gols</th></tr>
-<tr><td>23:30</td><td>Vencedor SF1 × Vencedor SF2</td><td>-</td><td>-</td></tr>
-</table>
-</div>
 
+    </table>
+  </div>
+
+  <!-- SEMIFINAL -->
+  <h4>Semifinais</h4>
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>Horário</th>
+        <th>Confronto</th>
+        <th>Placar</th>
+        <th>Gols</th>
+      </tr>
+      <tr>
+        <td>22:40</td>
+        <td>
+          <div class="match">
+            <span class="team left">Vencedor QF1</span>
+            <span class="vs">×</span>
+            <span class="team right">Vencedor QF4</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>23:10</td>
+        <td>
+          <div class="match">
+            <span class="team left">Vencedor QF2</span>
+            <span class="vs">×</span>
+            <span class="team right">Vencedor QF3</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- FINAL -->
+  <h4>Final</h4>
+  <div class="table-wrap">
+    <table>
+      <tr>
+        <th>Horário</th>
+        <th>Confronto</th>
+        <th>Placar</th>
+        <th>Gols</th>
+      </tr>
+      <tr>
+        <td>23:40</td>
+        <td>
+          <div class="match">
+            <span class="team left">Vencedor SF1</span>
+            <span class="vs">×</span>
+            <span class="team right">Vencedor SF2</span>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
 
 </section>
 </body>
 </html>
-
-
